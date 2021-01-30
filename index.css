@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+    margin-bottom: 0%;
+    line-height:1;
+    background-color: blanchedalmond;
+    line-height: 2;
+}
+.score{
+    font-size: 35px;
+    background-color: yellow;
+    padding: 1px;
+}
+.hole{
+    display: inline-flex;
+    position: relative;
+    background-image: url(./Hole.png);
+    width: 201px;
+    height: 45px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.mole{
+    background: url(./Peng.png);
+    background-size: 100%;
+    position: absolute;
+    top: 100%;
+    width: 65%;
+    height: 200px;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+    margin-left: 35px;
+    z-index: -1;
+    display: none;
+   
+    
+}
+
+
+.hole.up .mole{
+    display: block;
+    top: -300%;
+    z-index: 1;
+    
+}
